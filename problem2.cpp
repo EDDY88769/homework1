@@ -11,15 +11,15 @@ void func(char word[],int count[],int n,int index){
 		printf("}\n");
 		return;
 	}
-	//不選擇word[index]裡面的字母 
+	//Do not select letters inside the word [index]. 
 	count[index]=0;
 	func(word,count,n,index+1);
-	//選擇word[index]裡面的字母
+	//select letters inside the word [index].
 	count[index]=1;
 	func(word,count,n,index+1);
 }
 int main(){
-	char word[3]={'a','b','c'};
+	char word[3]={'a','b','c'};  
 	int count[3]={0,0,0};
 	
 	func(word,count,3,0);

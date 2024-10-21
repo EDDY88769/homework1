@@ -1,7 +1,9 @@
 #include<iostream>
 #include<cstdlib>
+int counter=0;
 using namespace std;
 int ackm(int m,int n){
+		counter++;
 		if(m==0){
 			return n+1;
 		}
@@ -13,12 +15,14 @@ int ackm(int m,int n){
 		}
 	}
 int main(){
-	int m,n,a,i=0;
+	int m,n,result,i=0;
 	while(i==0){
-	cout<<"�п�Jm�Mn����:";
+	counter=0;
+	cout<<"Please Enter the value of m and n:";
 	cin>>m>>n; 
-	a=ackm(m,n);
-	cout<<"���G��"<<a<<endl;
+	result=ackm(m,n);
+	cout<<"The result of the Ackermann function:"<<result<<endl;
+	cout<<"Number of recursive calls:"<<counter<<endl;
 	}
 	return 0; 
 }
