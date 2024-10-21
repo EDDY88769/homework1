@@ -15,10 +15,10 @@ int ackm(int m,int n){
 int main(){
 	int m,n,a,i=0;
 	while(i==0){
-	cout<<"½Ğ¿é¤Jm©Mnªº­È:";
+	cout<<"ï¿½Ğ¿ï¿½Jmï¿½Mnï¿½ï¿½ï¿½ï¿½:";
 	cin>>m>>n; 
 	a=ackm(m,n);
-	cout<<"µ²ªG¬°"<<a<<endl;
+	cout<<"ï¿½ï¿½ï¿½Gï¿½ï¿½"<<a<<endl;
 	}
 	return 0; 
 }
