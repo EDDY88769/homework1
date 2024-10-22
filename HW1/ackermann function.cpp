@@ -21,7 +21,7 @@ int main(){
 	cout<<"Please Enter the value of m and n:";
 	cin>>m>>n; 
 	result=ackm(m,n);
-	cout<<"The result of the Ackermann function:"<<result<<endl;
+	cout<<"A("<<m<<","<<n<<")="<<result<<endl;
 	cout<<"Number of recursive calls:"<<counter<<endl;
 	}
 	return 0; 
